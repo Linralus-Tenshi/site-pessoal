@@ -45,7 +45,7 @@ span[data-descr]:hover::after {
     min-height: auto;
     border: 2px gray outset;
     border-radius: 2px;
-    background-color: cornsilk;
+    background-color: white;
     padding: 12px;
     font-size: 14px;
     z-index: 1;
