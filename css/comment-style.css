@@ -1,0 +1,48 @@
+/* formatação por William Kalel v0.0.9 */
+
+.content-text a {
+    color: gray;
+    text-decoration: none;
+}
+
+.content-text a::before {
+    content: ">";
+}
+
+.content-text a::after {
+    content: "<";
+}
+
+.content-text a:hover {
+    color: darkgray;
+}
+
+.comment-area {
+    width: 70%;
+    height: 175px;
+    margin: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.area {
+    float: left;
+    padding: 5px;
+    height: auto;
+}
+
+.area.info {
+    width: 30%;
+}
+
+.area.comment {
+    width: 70%;
+}
+
+.info p {
+    font-weight: bold;
+}
+
+.comment p {
+    text-align: center;
+}
