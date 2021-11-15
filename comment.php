@@ -1,6 +1,8 @@
 <?php
 
 $sql = "SELECT * FROM comentarios";
+date_default_timezone_set('America/Sao_Paulo');
+
 
 $conexao = new PDO('mysql:host=127.0.0.1;dbname=sitepessoal','William K.','IYWlA6pK6bjJhjIH');
 
@@ -58,10 +60,11 @@ $lista = $resultado->fetchAll();
                         <p>Nome: <?php echo $linha['nome'] ?></p>
                         <p>Turma: <?php echo $linha['turma'] ?></p>
                         <p>Nº: <?php echo $linha['id'] ?></p>
+                        <p><?php echo $linha['data'] ?></p>
                     </div>
 				    
                     <div class="area comment">
-                        <p>Disse: <?php echo $linha['comentario'] ?></p>
+                        <p><?php echo $linha['comentario'] ?></p>
                     </div>
                 </div>
             <?php endforeach ?>

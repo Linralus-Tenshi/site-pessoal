@@ -52,18 +52,26 @@ span[data-descr]:hover::after {
     text-align: center;
 }
 
+@media screen and (max-width:800px) {
+    span[data-descr]{
+        display: none;
+    }
+}
+
 /* --- header --- */
 
 .header {
     width: 100%;
     height: auto;
-    padding: 5px;
     background-color: black;
+    display: flex;
+    align-content: center;
 }
 
 .title {
     float: left;
     padding: 5px;
+    align-self: center;
 }
 
 .title.logo {
@@ -72,7 +80,6 @@ span[data-descr]:hover::after {
 
 .title.menu {
     width: 40%;
-    padding: 1%;
 }
 
 .header:after {
@@ -83,14 +90,11 @@ span[data-descr]:hover::after {
 
 .title h1 {
     margin-left: 1.5%;
-    pointer-events: painted;
     color: white;
 }
 
 .menu a {
     text-decoration: none;
-    margin-left: 3%;
-    margin-right: 3%;
     font-size: 18px;
     color: white;
     transition: color 0.7s;
@@ -98,15 +102,6 @@ span[data-descr]:hover::after {
 
 .menu a:hover {
     color: gray;
-}
-
-#link {
-    float: right;
-    transition: color 0.7s;
-}
-
-#link:hover {
-    color: blue;
 }
 
 /* --- responsive config. (header) --- */
@@ -119,9 +114,6 @@ span[data-descr]:hover::after {
         font-size: medium;
         margin-left: 1.5%;
         margin-right: 1.5%;
-    }
-    #link {
-        float: none;
     }
 }
 
@@ -155,11 +147,14 @@ span[data-descr]:hover::after {
     padding: 5px;
     box-shadow: 3px 2px 3px gray;
     border-radius: 2px;
+    display: flex;
+    align-content: center;
 }
 
 .logo {
     width: 40%;
     float: left;
+    align-self: center;
 }
 
 .logo img {
@@ -217,9 +212,6 @@ span[data-descr]:hover::after {
         margin-top: 2.5%;
         margin-bottom: 2.5%;
     }
-    .subtitle p {
-        margin-top: 10%;
-    }
 }
 
 /* --- icon --- */
@@ -231,6 +223,8 @@ span[data-descr]:hover::after {
     margin-bottom: 2.5%;
     margin-left: 5%;
     margin-right: 5%;
+    display: flex;
+    justify-content: center;
 }
 
 .left {
@@ -243,6 +237,10 @@ span[data-descr]:hover::after {
 
 .border {
     border: 2px solid black;
+}
+
+.icon {
+    align-self: center;
 }
 
 .icon.image {
@@ -288,6 +286,9 @@ span[data-descr]:hover::after {
 /* --- responsive config. (icon-area) --- */
 
 @media screen and (max-width:800px) {
+    .icon-area {
+        display: inline;
+    }
     .icon.image, .icon.text {
         width: 100%;
     }
