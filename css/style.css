@@ -53,7 +53,7 @@ span[data-descr]:hover::after {
 }
 
 @media screen and (max-width:800px) {
-    span[data-descr]:hover{
+    span[data-descr]:hover::after {
         display: none;
     }
 }
@@ -98,6 +98,8 @@ span[data-descr]:hover::after {
     font-size: 18px;
     color: white;
     transition: color 0.7s;
+    margin-left: 1%;
+    margin-right: 1%;
 }
 
 .menu a:hover {
@@ -112,8 +114,8 @@ span[data-descr]:hover::after {
     }
     .title.menu a {
         font-size: medium;
-        margin-left: 1.5%;
-        margin-right: 1.5%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
     }
 }
 

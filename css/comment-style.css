@@ -5,14 +5,6 @@
     text-decoration: none;
 }
 
-.content-text a::before {
-    content: ">";
-}
-
-.content-text a::after {
-    content: "<";
-}
-
 .content-text a:hover {
     color: darkgray;
 }
@@ -47,4 +39,12 @@
 
 .comment p {
     text-align: justify;
+}
+
+@media screen and (max-width:800px) {
+    .comment-area {
+        margin-top: 2.5%;
+        margin-bottom: 2.5%;
+        width: 90%;
+    }
 }
