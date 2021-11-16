@@ -4,7 +4,7 @@ $sql = "SELECT * FROM comentarios";
 date_default_timezone_set('America/Sao_Paulo');
 
 
-$conexao = new PDO('mysql:host=127.0.0.1;dbname=sitepessoal','William K.','IYWlA6pK6bjJhjIH');
+$conexao = new PDO('mysql:host=127.0.0.1;dbname=sitepessoal','root','');
 
 $resultado = $conexao->query($sql);
 $lista = $resultado->fetchAll();
@@ -20,7 +20,7 @@ $lista = $resultado->fetchAll();
     <title>Comentários</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/comment-style.css">
-    <!-- desenvolvido por William Kalel v0.0.9 -->
+    <!-- desenvolvido por William Kalel v0.1.4 -->
     <link rel="apple-touch-icon" sizes="180x180" href="imagens/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon/favicon-16x16.png">

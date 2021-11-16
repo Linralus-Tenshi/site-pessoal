@@ -1,4 +1,4 @@
-/* formatação por William Kalel v0.0.9 */
+/* formatação por William Kalel v0.1.4 */
 
 /* basic formatting */
 
@@ -53,7 +53,7 @@ span[data-descr]:hover::after {
 }
 
 @media screen and (max-width:800px) {
-    span[data-descr]{
+    span[data-descr]:hover{
         display: none;
     }
 }
@@ -350,6 +350,7 @@ hr {
     width: 50%;
     height: auto;
     padding: 5px;
+    float: left;
 }
 
 input[type=text] {
